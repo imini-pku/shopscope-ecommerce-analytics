@@ -50,11 +50,11 @@ def bar(c,label,value,maxv,x,y,w=300,color=TEAL,unit='%'):
 
 def report():
     p=ROOT/'reports/ShopScope_分析报告.pdf';c=canvas.Canvas(str(p),pagesize=(595,842));c.setTitle('ShopScope 电商行为与推荐分析')
-    head(c,'DATA ANALYSIS / 01','从购物行为到推荐候选','Retailrocket 全量公开日志 · SQL / Python / DuckDB · AI辅助实现',1,2)
+    head(c,'DATA ANALYSIS / 01','从购物行为到推荐候选','Retailrocket 全量公开日志 · SQL / Python / DuckDB',1,2)
     metric(c,48,671,'275.61万','原始事件记录');metric(c,218,671,'140.76万','匿名访客');metric(c,388,671,'176.17万','按30分钟间隔划分的访问')
     y=section(c,'01  核心判断',565)
     y=wrap(c,'共同浏览比全局热门更能预测下一件被浏览的商品，适合作为推荐候选继续验证；但约38%的测试预测点完全回退热门，覆盖与商品时效性仍是优先问题。历史日志中的较高命中率不足以直接决定上线。',y)
-    y=wrap(c,'业务连接：内容电商连接商品发现与站内购买，本项目据此练习“下一商品发现→购买”的分析链。平台机制参考TikTok官方2025-03-31介绍，原文链接见docs/interview_notes.md；本数据不用于推断欧洲市场表现。',y-3,size=9,leading=15,color=MUTED)
+    y=wrap(c,'业务连接：内容电商连接商品发现与站内购买，本项目据此分析“下一商品发现→购买”的行为链。平台机制参考TikTok官方2025-03-31介绍，原文链接见docs/business_context.md；本数据不用于推断欧洲市场表现。',y-3,size=9,leading=15,color=MUTED)
     y=section(c,'02  数据口径先于业务解释',y-15)
     y=wrap(c,'完整读取2,756,101条事件，删除460条五字段完全重复记录，保留不同时刻的重复浏览；清洗后2,755,641条，非法记录0条。建立用户与访问表，并检查主键、关联前后行数与孤立记录。观测期间为2015年5月3日至9月18日（UTC）。',y)
     y=section(c,'03  从浏览到购买：以同一商品、同次访问计数',y-16)
@@ -80,7 +80,7 @@ def report():
     e=M['experiment'];y=wrap(c,f"独立模拟100,000名用户，分流检查p={e['srm_pvalue']:.3f}；对照购买比例{e['control_rate']:.3%}，处理{e['treatment_rate']:.3%}。差异{e['difference_pp']:.3f}个百分点，95%区间[{e['ci_low_pp']:.3f}, {e['ci_high_pp']:.3f}]包含0。客服接触率护栏未触发，但转化证据不足，不作上线判断。",y)
     y=wrap(c,f"以2.5%为假设基线、识别0.15个百分点差异、双侧5%显著性和80%功效，规划约{e['sample_size_per_arm']:,}人/组；本次模拟规模低于该目标。真实验证需按用户稳定随机、固定观察窗口，并在实验前锁定指标和停止规则。",y-5)
     y=section(c,'08  可交付与复现',y-14)
-    wrap(c,'12个SQL文件、全量质量检查、边界测试、原始数据校验值、交互看板、逐项结果表及一页实验设计。源代码由Codex辅助实现，输出已按固定口径计算和检查。没有使用TikTok内部数据，也未实施真实线上实验。',y)
+    wrap(c,'12个SQL文件、全量质量检查、边界测试、原始数据校验值、交互看板、逐项结果表及一页实验设计。全部指标按固定口径计算和检查，可通过公开输入与脚本复现；实验部分为独立模拟数据分析。',y)
     c.save();return p
 
 def experiment():

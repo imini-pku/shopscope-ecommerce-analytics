@@ -9,7 +9,7 @@
 - [在线交互看板](https://imini-pku.github.io/shopscope-ecommerce-analytics/) / [离线页面](app/index.html)：支持日期筛选、事件切换与验证/测试比较。
 - [两页分析报告](reports/ShopScope_分析报告.pdf) / [A/B 实验设计](reports/ShopScope_AB实验设计.pdf)
 - [完整结果与检查](reports/metrics.json) / [指标与评估方法](docs/methodology.md) / [5分钟演示说明](docs/demo_walkthrough.md)
-- [业务定位与10个面试问答](docs/interview_notes.md)
+- [业务问题与分析范围](docs/business_context.md)
 - [完整下载包（含原始事件数据）](https://github.com/imini-pku/shopscope-ecommerce-analytics/releases/latest)
 
 ## 主要结果
@@ -52,8 +52,8 @@ python app/build_dashboard.py
 | `app/` | 完整看板源码、构建脚本与离线页面 |
 | `docs/` | 字段、指标、方法与演示流程 |
 
-## 数据、许可和实现说明
+## 数据来源与分析范围
 
 数据来源为 [Retailrocket 原发布页](https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset)，原发布方标注 **CC BY-NC-SA 4.0**；下载包保留完整来源与许可说明。数据与衍生分析遵循该许可，原创代码采用 MIT，详见 [LICENSE](LICENSE) 和 [DATA_LICENSE.md](DATA_LICENSE.md)。
 
-本项目由吴天雄发起，使用 Codex 辅助实现、检查和整理。该作品已完成计算；不把 AI 生成的实现等同于本人独立编码能力测评，也不改变课程学习记录。数据不含推荐曝光、价格、国家、达人或补贴字段，因此不报告曝光 CTR、GMV、欧洲市场表现或实际线上实验收益。
+本项目基于公开历史日志完成分析。数据不含推荐曝光、价格、国家、达人或补贴字段，因此不报告曝光 CTR、GMV、欧洲市场表现或实际线上实验收益。
