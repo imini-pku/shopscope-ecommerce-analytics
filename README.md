@@ -6,9 +6,10 @@
 
 ## 先看成果
 
-- [交互看板](app/index.html)：下载仓库后双击即可离线打开；支持日期筛选、事件切换与验证/测试比较。
+- [在线交互看板](https://imini-pku.github.io/shopscope-ecommerce-analytics/) / [离线页面](app/index.html)：支持日期筛选、事件切换与验证/测试比较。
 - [两页分析报告](reports/ShopScope_分析报告.pdf) / [A/B 实验设计](reports/ShopScope_AB实验设计.pdf)
 - [完整结果与检查](reports/metrics.json) / [指标与评估方法](docs/methodology.md) / [5分钟演示说明](docs/demo_walkthrough.md)
+- [业务定位与10个面试问答](docs/interview_notes.md)
 - [完整下载包（含原始事件数据）](https://github.com/imini-pku/shopscope-ecommerce-analytics/releases/latest)
 
 ## 主要结果
@@ -36,7 +37,7 @@ python src/pipeline.py
 python app/build_dashboard.py
 ```
 
-已含数据时跳过下载步骤。原始 CSV 约 94MB，临时数据库由脚本生成，不需上传或手动编辑。输入文件经过 SHA-256 校验，报告、看板和所有指标均由同一份结果生成。
+已含数据时跳过下载步骤。原始 CSV 约 94MB。Release另提供完整DuckDB分析数据库，含清洗事件、会话、训练商品关系、逐预测点候选及评估明细，可直接查表；也可由脚本重建。输入文件经过 SHA-256 校验，报告、看板和所有指标均由同一份结果生成。
 
 可选重建 PDF：`python -m pip install -r requirements-report.txt` 后运行 `python src/build_reports.py`。字体优先使用本机中文字体，否则使用 PDF 中文标准字体。
 
