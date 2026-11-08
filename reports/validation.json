@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "join_rows_preserved": true,
+    "user_key_unique": true,
+    "no_unmatched_users": true,
+    "strict_funnel_subset": true,
+    "strict_funnel_subset_of_cart": true,
+    "training_before_validation": true,
+    "labels_after_prediction": true,
+    "validation_labels_within_period": true,
+    "same_query_denominator": true,
+    "ten_unique_candidates": true,
+    "no_seed_recommended": true,
+    "fixed_training_catalog": true,
+    "valid_coverage": true
+  },
+  "timings_seconds": {
+    "01_data_quality.sql": 0.281,
+    "02_clean_events.sql": 0.453,
+    "03_users.sql": 0.125,
+    "04_sessions.sql": 0.938,
+    "05_daily_metrics.sql": 0.203,
+    "06_funnel.sql": 0.516,
+    "07_segment_metrics.sql": 0.093,
+    "08_join_checks.sql": 0.078,
+    "09_popular.sql": 0.531,
+    "10_coview.sql": 0.438,
+    "11_eval_queries.sql": 0.281,
+    "12_evaluation.sql": 1.172
+  },
+  "duckdb_version": "1.4.3",
+  "numpy_version": "2.3.5"
+}

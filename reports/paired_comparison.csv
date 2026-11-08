@@ -1,0 +1,3 @@
+split,difference_pp,ci_low_pp,ci_high_pp,bootstrap_unit,bootstrap_replicates
+validation,21.293324775353017,20.85684764648733,21.716076789942885,visitor,600
+test,18.050131364055954,17.53505101694492,18.560365237620076,visitor,600

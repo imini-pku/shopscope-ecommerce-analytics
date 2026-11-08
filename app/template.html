@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>ShopScope — 购物行为与推荐评估</title>
+  <meta name="description" content="基于 Retailrocket 公开行为数据的购物路径分析、推荐离线评估与模拟实验作品。">
+  <style>__STYLE__</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到分析内容</a>
+<header class="topbar"><div class="nav wrap">
+  <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">S</span><span>ShopScope<small>ECOMMERCE ANALYTICS</small></span></a>
+  <nav aria-label="内容导航"><a href="#behavior">行为分析</a><a href="#recommendation">推荐评估</a><a href="#experiment">模拟实验</a><a href="#methods">口径与数据</a></nav>
+  <button id="download" class="button quiet" type="button">下载结果 JSON <span aria-hidden="true">↗</span></button>
+</div></header>
+<main id="main" class="wrap">
+  <section class="hero" aria-labelledby="page-title">
+    <div><p class="eyebrow"><span class="live-dot"></span> SQL 驱动的电商分析作品</p>
+    <h1 id="page-title">从购物行为<br class="mobile-break">走向推荐决策<span class="title-dot">.</span></h1>
+    <p class="hero-copy">梳理用户的购物路径，比较推荐策略的离线表现，再将分析发现转化为可检验的实验方案。</p>
+    <div class="hero-meta"><span class="badge teal">公开行为数据</span><span class="badge navy">离线推荐评估</span><span class="badge amber">模拟 A/B 实验</span></div></div>
+    <div class="period"><span class="label">数据观测窗口 · UTC</span><strong id="period"></strong><span id="source-label"></span><span id="built-date"></span></div>
+  </section>
+  <section class="kpis" aria-label="全观测期概况">
+    <article class="kpi"><span class="label">有效行为事件</span><strong id="kpi-events">—</strong><span>去除完全重复及无效记录后</span></article>
+    <article class="kpi"><span class="label">观测访客标识</span><strong id="kpi-visitors">—</strong><span>按 visitorid 去重</span></article>
+    <article class="kpi"><span class="label">访问次数</span><strong id="kpi-sessions">—</strong><span>以 30 分钟无活动间隔切分</span></article>
+    <article class="kpi accent"><span class="label">浏览后购买比例</span><strong id="kpi-rate">—</strong><span>同访问、同商品，严格时间顺序</span></article>
+  </section>
+  <section class="finding-strip" aria-labelledby="finding-title"><h2 id="finding-title"><span aria-hidden="true">↗</span> 分析要点</h2><div id="insights"></div></section>
+
+  <section id="behavior" class="section" aria-labelledby="behavior-title">
+    <div class="section-heading"><div><p class="eyebrow">01 / BEHAVIOR</p><h2 id="behavior-title">先看行为，再看差异</h2></div><span class="section-note">全样本统计 · 公开观测</span></div>
+    <article class="panel trend-panel">
+      <div class="panel-head"><div><h3>每日行为趋势</h3><p>检查波动发生的时间，区分不同事件的量级。</p></div><div class="segmented" id="series-tabs" role="group" aria-label="趋势事件类型"><button type="button" data-series="views" aria-pressed="true">浏览</button><button type="button" data-series="addtocarts" aria-pressed="false">加购</button><button type="button" data-series="transactions" aria-pressed="false">购买</button></div></div>
+      <div class="filters"><div class="date-fields"><label>开始日期<input type="date" id="date-start"></label><span aria-hidden="true">—</span><label>结束日期<input type="date" id="date-end"></label><button type="button" id="reset" class="button quiet">重置</button></div><p>日期筛选仅作用于本图及区间事件数，其余结果保持全样本口径。</p></div>
+      <div class="trend-summary"><strong id="range-total"></strong><span id="range-caption"></span><span id="range-error" role="status"></span></div>
+      <div class="chart-container"><svg id="trend-chart" viewBox="0 0 1120 300" role="img" tabindex="0" aria-label="每日行为趋势，可使用左右方向键查看每日数值"></svg><div class="tooltip" id="trend-tooltip" hidden></div></div>
+      <details class="table-details"><summary>查看每日明细表 <span>无障碍数据视图</span></summary><div class="table-wrap" id="daily-table"></div></details>
+    </article>
+    <div class="two-col">
+      <article class="panel"><div class="panel-head"><div><h3>同商品的有序行为</h3><p>统计单位：访问 × 商品配对</p></div><span class="mini-tag">路径</span></div><div id="funnel-bars" class="horizontal-bars"></div><p class="chart-note">“浏览→加购”和“浏览→购买”分别由浏览出发；严格三步路径要求加购发生在购买之前。</p><details class="table-details"><summary>计数与指标口径</summary><div class="table-wrap" id="funnel-table"></div></details></article>
+      <article class="panel"><div class="panel-head"><div><h3>首次观测与已有历史</h3><p>访问层面的浏览后购买比例</p></div><span class="mini-tag">人群</span></div><div id="segment-bars" class="horizontal-bars"></div><p class="chart-note">“首次观测”取决于数据窗口，不等于新注册用户。人群差异提供诊断线索，不表示因果效果。</p><details class="table-details"><summary>查看分组明细</summary><div class="table-wrap" id="segment-table"></div></details></article>
+    </div>
+  </section>
+
+  <section id="recommendation" class="section" aria-labelledby="recommendation-title">
+    <div class="section-heading"><div><p class="eyebrow">02 / RECOMMENDATION</p><h2 id="recommendation-title">用同一规则比较推荐</h2></div><span class="badge navy">离线评估</span></div>
+    <article class="panel"><div class="panel-head"><div><h3>热门推荐与共同浏览推荐</h3><p>按时间拆分数据；评估使用固定预测点和统一候选商品范围。</p></div><div class="segmented" id="split-tabs" role="group" aria-label="推荐评估数据切分"></div></div>
+      <div class="rec-meta"><span>评估样本 <strong id="rec-queries"></strong></span><span>候选商品 <strong id="rec-candidates"></strong></span><span>推荐列表 <strong>Top 10</strong></span></div>
+      <p class="chart-note" id="protocol-summary" hidden></p>
+      <div class="two-col inner"><div><h4>Hit Rate@10 <span>命中比例</span></h4><div id="hit-bars" class="horizontal-bars compact"></div><p class="chart-note">命中样本数 ÷ 全部合格评估样本。目标为同次访问中下一次浏览的不同商品，检查它是否出现在前 10 个推荐中。</p></div><div><h4>Coverage@10 <span>商品覆盖比例</span></h4><div id="coverage-bars" class="horizontal-bars compact"></div><p class="chart-note">被推荐的不同商品数 ÷ 固定候选商品数。衡量推荐触达的商品范围；两图分别缩放，精确数值见标签。</p></div></div>
+      <p class="rec-conclusion" id="rec-conclusion"></p>
+      <p class="chart-note" id="paired-conclusion" hidden></p>
+      <details class="table-details"><summary>查看模型结果与区间 <span>含回退比例</span></summary><div class="table-wrap" id="rec-table"></div></details>
+      <p class="chart-note bottom-note">“完全回退热门”指没有任何共同浏览候选的预测点；列表仅部分使用热门补足不计入该比例。离线命中反映历史行为预测能力，线上增量效果需通过实验判断。</p>
+    </article>
+  </section>
+
+  <section id="experiment" class="section" aria-labelledby="experiment-title">
+    <div class="section-heading"><div><p class="eyebrow">03 / EXPERIMENT</p><h2 id="experiment-title">把策略推进到可检验的假设</h2></div><span class="badge amber">模拟数据 · 非线上实验</span></div>
+    <article class="panel experiment-panel"><div class="panel-head"><div><h3>用户级随机 A/B 分析演示</h3><p>固定随机种子、按用户分组；同时检查分组比例与效果不确定性。</p></div><span class="mini-tag" id="seed-label"></span></div>
+      <div class="experiment-grid"><div class="ab-groups"><div><span class="label">对照组</span><strong id="control-rate"></strong><span id="control-n"></span></div><div><span class="label">实验组</span><strong id="treatment-rate"></strong><span id="treatment-n"></span></div></div><div class="effect"><span class="label">实验组 − 对照组</span><strong id="effect-value"></strong><svg id="effect-chart" viewBox="0 0 570 145" role="img" aria-label="模拟实验效果差异与百分之九十五置信区间"></svg><p id="effect-interval"></p></div></div>
+      <div class="experiment-decision"><span class="decision-icon" aria-hidden="true">i</span><div><strong id="experiment-decision"></strong><p id="srm-result"></p></div></div>
+      <p class="chart-note bottom-note">百分点是两个比例直接相减后的单位。模拟结果用于演示分析流程，不是实际业务收益。</p>
+    </article>
+  </section>
+
+  <section id="methods" class="section methods" aria-labelledby="methods-title">
+    <div class="section-heading"><div><p class="eyebrow">04 / METHODS</p><h2 id="methods-title">口径清楚，结果可复查</h2></div></div>
+    <div class="method-grid"><article><span class="method-number">01</span><h3>数据与清洗</h3><p id="quality-text"></p><a id="source-link" target="_blank" rel="noopener noreferrer">查看原始数据发布页 ↗</a></article><article><span class="method-number">02</span><h3>路径定义</h3><p>对每位访客按时间排序，以相邻事件间隔超过 30 分钟开启新访问。行为路径在同一访问、同一商品内匹配，要求事件时间严格递增。</p></article><article><span class="method-number">03</span><h3>评估与复现</h3><p>推荐规则仅由训练期行为构建，验证与测试使用后续时段。看板只嵌入汇总结果，不包含逐访客轨迹；源代码、SQL 和方法说明在同一项目仓库。</p><a href="../docs/methodology.md">阅读方法说明 ↗</a></article></div>
+    <details class="provenance"><summary>数据版本与结果来源</summary><dl><dt>构建日期</dt><dd id="provenance-date"></dd><dt>输入事件文件 SHA-256</dt><dd id="provenance-sha"></dd><dt>看板结果文件</dt><dd>reports/metrics.json</dd></dl></details>
+  </section>
+</main>
+<footer class="wrap footer"><span class="brand-name">ShopScope</span><p>公开数据分析 · 离线策略比较 · 模拟实验设计</p><a href="#">返回顶部 ↑</a></footer>
+<script id="metrics" type="application/json">__DATA__</script>
+<script>__SCRIPT__</script>
+</body></html>

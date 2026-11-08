@@ -1,0 +1,1162 @@
+{
+  "meta": {
+    "project": "ShopScope",
+    "source": "Retailrocket公开行为数据",
+    "source_url": "https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset",
+    "analysis_date": "2026-11-08",
+    "raw_rows": 2756101,
+    "invalid_rows": 0,
+    "expected_null_transaction_ids": 2733644,
+    "unexpected_transaction_ids": 0,
+    "clean_rows": 2755641,
+    "visitors": 1407580,
+    "items": 235061,
+    "date_min": "2015-05-03 03:00:04.384+00",
+    "date_max": "2015-09-18 02:59:47.788+00",
+    "sessions": 1761675,
+    "duplicates_removed": 460,
+    "data_sha256": "3745aa83238b1e6d44d8fda209807899f420084398f94ddf745f3cbcfecbf9e7"
+  },
+  "daily": [
+    {
+      "date": "2015-05-03",
+      "views": 13303,
+      "addtocarts": 296,
+      "transactions": 83,
+      "visitors": 7865
+    },
+    {
+      "date": "2015-05-04",
+      "views": 18681,
+      "addtocarts": 578,
+      "transactions": 154,
+      "visitors": 11019
+    },
+    {
+      "date": "2015-05-05",
+      "views": 22225,
+      "addtocarts": 561,
+      "transactions": 225,
+      "visitors": 13084
+    },
+    {
+      "date": "2015-05-06",
+      "views": 23015,
+      "addtocarts": 647,
+      "transactions": 258,
+      "visitors": 13687
+    },
+    {
+      "date": "2015-05-07",
+      "views": 22368,
+      "addtocarts": 572,
+      "transactions": 217,
+      "visitors": 13086
+    },
+    {
+      "date": "2015-05-08",
+      "views": 18766,
+      "addtocarts": 531,
+      "transactions": 126,
+      "visitors": 11106
+    },
+    {
+      "date": "2015-05-09",
+      "views": 12353,
+      "addtocarts": 279,
+      "transactions": 63,
+      "visitors": 7610
+    },
+    {
+      "date": "2015-05-10",
+      "views": 11771,
+      "addtocarts": 310,
+      "transactions": 60,
+      "visitors": 7413
+    },
+    {
+      "date": "2015-05-11",
+      "views": 15702,
+      "addtocarts": 388,
+      "transactions": 84,
+      "visitors": 9512
+    },
+    {
+      "date": "2015-05-12",
+      "views": 21610,
+      "addtocarts": 575,
+      "transactions": 186,
+      "visitors": 13041
+    },
+    {
+      "date": "2015-05-13",
+      "views": 22975,
+      "addtocarts": 581,
+      "transactions": 208,
+      "visitors": 13466
+    },
+    {
+      "date": "2015-05-14",
+      "views": 23231,
+      "addtocarts": 666,
+      "transactions": 256,
+      "visitors": 13662
+    },
+    {
+      "date": "2015-05-15",
+      "views": 21496,
+      "addtocarts": 507,
+      "transactions": 185,
+      "visitors": 12745
+    },
+    {
+      "date": "2015-05-16",
+      "views": 18765,
+      "addtocarts": 417,
+      "transactions": 130,
+      "visitors": 11414
+    },
+    {
+      "date": "2015-05-17",
+      "views": 20216,
+      "addtocarts": 493,
+      "transactions": 169,
+      "visitors": 11996
+    },
+    {
+      "date": "2015-05-18",
+      "views": 26187,
+      "addtocarts": 649,
+      "transactions": 245,
+      "visitors": 15476
+    },
+    {
+      "date": "2015-05-19",
+      "views": 25949,
+      "addtocarts": 652,
+      "transactions": 196,
+      "visitors": 15482
+    },
+    {
+      "date": "2015-05-20",
+      "views": 21688,
+      "addtocarts": 422,
+      "transactions": 125,
+      "visitors": 13332
+    },
+    {
+      "date": "2015-05-21",
+      "views": 20992,
+      "addtocarts": 551,
+      "transactions": 131,
+      "visitors": 12738
+    },
+    {
+      "date": "2015-05-22",
+      "views": 20445,
+      "addtocarts": 462,
+      "transactions": 154,
+      "visitors": 12340
+    },
+    {
+      "date": "2015-05-23",
+      "views": 15938,
+      "addtocarts": 355,
+      "transactions": 113,
+      "visitors": 9741
+    },
+    {
+      "date": "2015-05-24",
+      "views": 16830,
+      "addtocarts": 319,
+      "transactions": 97,
+      "visitors": 10453
+    },
+    {
+      "date": "2015-05-25",
+      "views": 23106,
+      "addtocarts": 576,
+      "transactions": 178,
+      "visitors": 14161
+    },
+    {
+      "date": "2015-05-26",
+      "views": 21222,
+      "addtocarts": 580,
+      "transactions": 194,
+      "visitors": 12781
+    },
+    {
+      "date": "2015-05-27",
+      "views": 21210,
+      "addtocarts": 524,
+      "transactions": 197,
+      "visitors": 12828
+    },
+    {
+      "date": "2015-05-28",
+      "views": 21214,
+      "addtocarts": 581,
+      "transactions": 225,
+      "visitors": 12956
+    },
+    {
+      "date": "2015-05-29",
+      "views": 18986,
+      "addtocarts": 447,
+      "transactions": 137,
+      "visitors": 11957
+    },
+    {
+      "date": "2015-05-30",
+      "views": 15463,
+      "addtocarts": 449,
+      "transactions": 116,
+      "visitors": 9684
+    },
+    {
+      "date": "2015-05-31",
+      "views": 15948,
+      "addtocarts": 350,
+      "transactions": 99,
+      "visitors": 9936
+    },
+    {
+      "date": "2015-06-01",
+      "views": 22073,
+      "addtocarts": 519,
+      "transactions": 200,
+      "visitors": 13257
+    },
+    {
+      "date": "2015-06-02",
+      "views": 22604,
+      "addtocarts": 522,
+      "transactions": 206,
+      "visitors": 13534
+    },
+    {
+      "date": "2015-06-03",
+      "views": 22776,
+      "addtocarts": 579,
+      "transactions": 204,
+      "visitors": 13414
+    },
+    {
+      "date": "2015-06-04",
+      "views": 22820,
+      "addtocarts": 604,
+      "transactions": 205,
+      "visitors": 13088
+    },
+    {
+      "date": "2015-06-05",
+      "views": 20213,
+      "addtocarts": 449,
+      "transactions": 149,
+      "visitors": 12137
+    },
+    {
+      "date": "2015-06-06",
+      "views": 15679,
+      "addtocarts": 372,
+      "transactions": 104,
+      "visitors": 9698
+    },
+    {
+      "date": "2015-06-07",
+      "views": 15697,
+      "addtocarts": 345,
+      "transactions": 106,
+      "visitors": 9423
+    },
+    {
+      "date": "2015-06-08",
+      "views": 20207,
+      "addtocarts": 537,
+      "transactions": 192,
+      "visitors": 12521
+    },
+    {
+      "date": "2015-06-09",
+      "views": 23078,
+      "addtocarts": 469,
+      "transactions": 132,
+      "visitors": 13684
+    },
+    {
+      "date": "2015-06-10",
+      "views": 23213,
+      "addtocarts": 597,
+      "transactions": 210,
+      "visitors": 13995
+    },
+    {
+      "date": "2015-06-11",
+      "views": 20253,
+      "addtocarts": 497,
+      "transactions": 157,
+      "visitors": 12387
+    },
+    {
+      "date": "2015-06-12",
+      "views": 15426,
+      "addtocarts": 332,
+      "transactions": 107,
+      "visitors": 9281
+    },
+    {
+      "date": "2015-06-13",
+      "views": 11932,
+      "addtocarts": 277,
+      "transactions": 60,
+      "visitors": 7465
+    },
+    {
+      "date": "2015-06-14",
+      "views": 13690,
+      "addtocarts": 353,
+      "transactions": 108,
+      "visitors": 8406
+    },
+    {
+      "date": "2015-06-15",
+      "views": 21451,
+      "addtocarts": 624,
+      "transactions": 191,
+      "visitors": 12558
+    },
+    {
+      "date": "2015-06-16",
+      "views": 23589,
+      "addtocarts": 799,
+      "transactions": 276,
+      "visitors": 13653
+    },
+    {
+      "date": "2015-06-17",
+      "views": 22948,
+      "addtocarts": 674,
+      "transactions": 269,
+      "visitors": 13392
+    },
+    {
+      "date": "2015-06-18",
+      "views": 22402,
+      "addtocarts": 700,
+      "transactions": 220,
+      "visitors": 13113
+    },
+    {
+      "date": "2015-06-19",
+      "views": 19961,
+      "addtocarts": 492,
+      "transactions": 166,
+      "visitors": 11504
+    },
+    {
+      "date": "2015-06-20",
+      "views": 15053,
+      "addtocarts": 401,
+      "transactions": 111,
+      "visitors": 8818
+    },
+    {
+      "date": "2015-06-21",
+      "views": 15216,
+      "addtocarts": 331,
+      "transactions": 83,
+      "visitors": 9337
+    },
+    {
+      "date": "2015-06-22",
+      "views": 22462,
+      "addtocarts": 597,
+      "transactions": 234,
+      "visitors": 12834
+    },
+    {
+      "date": "2015-06-23",
+      "views": 22733,
+      "addtocarts": 632,
+      "transactions": 250,
+      "visitors": 13098
+    },
+    {
+      "date": "2015-06-24",
+      "views": 21199,
+      "addtocarts": 583,
+      "transactions": 177,
+      "visitors": 12451
+    },
+    {
+      "date": "2015-06-25",
+      "views": 19557,
+      "addtocarts": 509,
+      "transactions": 204,
+      "visitors": 11793
+    },
+    {
+      "date": "2015-06-26",
+      "views": 19215,
+      "addtocarts": 479,
+      "transactions": 177,
+      "visitors": 11734
+    },
+    {
+      "date": "2015-06-27",
+      "views": 15014,
+      "addtocarts": 369,
+      "transactions": 91,
+      "visitors": 9098
+    },
+    {
+      "date": "2015-06-28",
+      "views": 16764,
+      "addtocarts": 342,
+      "transactions": 89,
+      "visitors": 10131
+    },
+    {
+      "date": "2015-06-29",
+      "views": 22257,
+      "addtocarts": 521,
+      "transactions": 203,
+      "visitors": 13190
+    },
+    {
+      "date": "2015-06-30",
+      "views": 20757,
+      "addtocarts": 526,
+      "transactions": 162,
+      "visitors": 12569
+    },
+    {
+      "date": "2015-07-01",
+      "views": 20089,
+      "addtocarts": 480,
+      "transactions": 195,
+      "visitors": 12157
+    },
+    {
+      "date": "2015-07-02",
+      "views": 20791,
+      "addtocarts": 461,
+      "transactions": 155,
+      "visitors": 12460
+    },
+    {
+      "date": "2015-07-03",
+      "views": 20129,
+      "addtocarts": 490,
+      "transactions": 155,
+      "visitors": 11860
+    },
+    {
+      "date": "2015-07-04",
+      "views": 15608,
+      "addtocarts": 364,
+      "transactions": 119,
+      "visitors": 9310
+    },
+    {
+      "date": "2015-07-05",
+      "views": 15173,
+      "addtocarts": 476,
+      "transactions": 100,
+      "visitors": 9193
+    },
+    {
+      "date": "2015-07-06",
+      "views": 21583,
+      "addtocarts": 552,
+      "transactions": 219,
+      "visitors": 12779
+    },
+    {
+      "date": "2015-07-07",
+      "views": 23466,
+      "addtocarts": 667,
+      "transactions": 247,
+      "visitors": 13732
+    },
+    {
+      "date": "2015-07-08",
+      "views": 24084,
+      "addtocarts": 689,
+      "transactions": 259,
+      "visitors": 14162
+    },
+    {
+      "date": "2015-07-09",
+      "views": 24111,
+      "addtocarts": 678,
+      "transactions": 207,
+      "visitors": 14063
+    },
+    {
+      "date": "2015-07-10",
+      "views": 22325,
+      "addtocarts": 640,
+      "transactions": 181,
+      "visitors": 14140
+    },
+    {
+      "date": "2015-07-11",
+      "views": 20317,
+      "addtocarts": 376,
+      "transactions": 98,
+      "visitors": 14596
+    },
+    {
+      "date": "2015-07-12",
+      "views": 20701,
+      "addtocarts": 334,
+      "transactions": 91,
+      "visitors": 14699
+    },
+    {
+      "date": "2015-07-13",
+      "views": 25234,
+      "addtocarts": 664,
+      "transactions": 216,
+      "visitors": 16515
+    },
+    {
+      "date": "2015-07-14",
+      "views": 26007,
+      "addtocarts": 630,
+      "transactions": 231,
+      "visitors": 16306
+    },
+    {
+      "date": "2015-07-15",
+      "views": 23361,
+      "addtocarts": 560,
+      "transactions": 216,
+      "visitors": 14932
+    },
+    {
+      "date": "2015-07-16",
+      "views": 20776,
+      "addtocarts": 605,
+      "transactions": 239,
+      "visitors": 13005
+    },
+    {
+      "date": "2015-07-17",
+      "views": 19597,
+      "addtocarts": 447,
+      "transactions": 139,
+      "visitors": 12840
+    },
+    {
+      "date": "2015-07-18",
+      "views": 15988,
+      "addtocarts": 399,
+      "transactions": 102,
+      "visitors": 10102
+    },
+    {
+      "date": "2015-07-19",
+      "views": 16315,
+      "addtocarts": 372,
+      "transactions": 116,
+      "visitors": 10473
+    },
+    {
+      "date": "2015-07-20",
+      "views": 24373,
+      "addtocarts": 724,
+      "transactions": 232,
+      "visitors": 15288
+    },
+    {
+      "date": "2015-07-21",
+      "views": 22713,
+      "addtocarts": 667,
+      "transactions": 227,
+      "visitors": 14212
+    },
+    {
+      "date": "2015-07-22",
+      "views": 21288,
+      "addtocarts": 770,
+      "transactions": 267,
+      "visitors": 13303
+    },
+    {
+      "date": "2015-07-23",
+      "views": 20709,
+      "addtocarts": 646,
+      "transactions": 234,
+      "visitors": 13001
+    },
+    {
+      "date": "2015-07-24",
+      "views": 22071,
+      "addtocarts": 538,
+      "transactions": 137,
+      "visitors": 14541
+    },
+    {
+      "date": "2015-07-25",
+      "views": 26551,
+      "addtocarts": 437,
+      "transactions": 116,
+      "visitors": 15571
+    },
+    {
+      "date": "2015-07-26",
+      "views": 32077,
+      "addtocarts": 471,
+      "transactions": 144,
+      "visitors": 17516
+    },
+    {
+      "date": "2015-07-27",
+      "views": 27622,
+      "addtocarts": 666,
+      "transactions": 267,
+      "visitors": 16015
+    },
+    {
+      "date": "2015-07-28",
+      "views": 20986,
+      "addtocarts": 716,
+      "transactions": 273,
+      "visitors": 13189
+    },
+    {
+      "date": "2015-07-29",
+      "views": 22329,
+      "addtocarts": 628,
+      "transactions": 240,
+      "visitors": 14113
+    },
+    {
+      "date": "2015-07-30",
+      "views": 20192,
+      "addtocarts": 565,
+      "transactions": 214,
+      "visitors": 12737
+    },
+    {
+      "date": "2015-07-31",
+      "views": 18231,
+      "addtocarts": 538,
+      "transactions": 166,
+      "visitors": 11771
+    },
+    {
+      "date": "2015-08-01",
+      "views": 14996,
+      "addtocarts": 379,
+      "transactions": 79,
+      "visitors": 9947
+    },
+    {
+      "date": "2015-08-02",
+      "views": 14752,
+      "addtocarts": 360,
+      "transactions": 105,
+      "visitors": 9533
+    },
+    {
+      "date": "2015-08-03",
+      "views": 20501,
+      "addtocarts": 565,
+      "transactions": 198,
+      "visitors": 13066
+    },
+    {
+      "date": "2015-08-04",
+      "views": 20436,
+      "addtocarts": 584,
+      "transactions": 209,
+      "visitors": 12795
+    },
+    {
+      "date": "2015-08-05",
+      "views": 19542,
+      "addtocarts": 624,
+      "transactions": 237,
+      "visitors": 12675
+    },
+    {
+      "date": "2015-08-06",
+      "views": 19668,
+      "addtocarts": 527,
+      "transactions": 127,
+      "visitors": 12984
+    },
+    {
+      "date": "2015-08-07",
+      "views": 18570,
+      "addtocarts": 600,
+      "transactions": 175,
+      "visitors": 11851
+    },
+    {
+      "date": "2015-08-08",
+      "views": 12459,
+      "addtocarts": 326,
+      "transactions": 67,
+      "visitors": 8272
+    },
+    {
+      "date": "2015-08-09",
+      "views": 12754,
+      "addtocarts": 300,
+      "transactions": 60,
+      "visitors": 8588
+    },
+    {
+      "date": "2015-08-10",
+      "views": 17770,
+      "addtocarts": 519,
+      "transactions": 129,
+      "visitors": 11289
+    },
+    {
+      "date": "2015-08-11",
+      "views": 17689,
+      "addtocarts": 382,
+      "transactions": 129,
+      "visitors": 11664
+    },
+    {
+      "date": "2015-08-12",
+      "views": 19331,
+      "addtocarts": 556,
+      "transactions": 195,
+      "visitors": 12806
+    },
+    {
+      "date": "2015-08-13",
+      "views": 18464,
+      "addtocarts": 511,
+      "transactions": 177,
+      "visitors": 12229
+    },
+    {
+      "date": "2015-08-14",
+      "views": 16442,
+      "addtocarts": 417,
+      "transactions": 112,
+      "visitors": 10637
+    },
+    {
+      "date": "2015-08-15",
+      "views": 12987,
+      "addtocarts": 341,
+      "transactions": 92,
+      "visitors": 8493
+    },
+    {
+      "date": "2015-08-16",
+      "views": 14033,
+      "addtocarts": 376,
+      "transactions": 78,
+      "visitors": 9340
+    },
+    {
+      "date": "2015-08-17",
+      "views": 20024,
+      "addtocarts": 615,
+      "transactions": 209,
+      "visitors": 12741
+    },
+    {
+      "date": "2015-08-18",
+      "views": 20019,
+      "addtocarts": 528,
+      "transactions": 201,
+      "visitors": 12741
+    },
+    {
+      "date": "2015-08-19",
+      "views": 19325,
+      "addtocarts": 535,
+      "transactions": 219,
+      "visitors": 12348
+    },
+    {
+      "date": "2015-08-20",
+      "views": 18487,
+      "addtocarts": 517,
+      "transactions": 208,
+      "visitors": 11527
+    },
+    {
+      "date": "2015-08-21",
+      "views": 17170,
+      "addtocarts": 442,
+      "transactions": 132,
+      "visitors": 11071
+    },
+    {
+      "date": "2015-08-22",
+      "views": 13816,
+      "addtocarts": 337,
+      "transactions": 91,
+      "visitors": 8977
+    },
+    {
+      "date": "2015-08-23",
+      "views": 13577,
+      "addtocarts": 343,
+      "transactions": 94,
+      "visitors": 9091
+    },
+    {
+      "date": "2015-08-24",
+      "views": 18033,
+      "addtocarts": 528,
+      "transactions": 179,
+      "visitors": 11785
+    },
+    {
+      "date": "2015-08-25",
+      "views": 19018,
+      "addtocarts": 496,
+      "transactions": 165,
+      "visitors": 12068
+    },
+    {
+      "date": "2015-08-26",
+      "views": 18203,
+      "addtocarts": 565,
+      "transactions": 205,
+      "visitors": 11521
+    },
+    {
+      "date": "2015-08-27",
+      "views": 18842,
+      "addtocarts": 509,
+      "transactions": 210,
+      "visitors": 12145
+    },
+    {
+      "date": "2015-08-28",
+      "views": 18886,
+      "addtocarts": 564,
+      "transactions": 152,
+      "visitors": 12005
+    },
+    {
+      "date": "2015-08-29",
+      "views": 14532,
+      "addtocarts": 353,
+      "transactions": 77,
+      "visitors": 9347
+    },
+    {
+      "date": "2015-08-30",
+      "views": 15557,
+      "addtocarts": 574,
+      "transactions": 146,
+      "visitors": 9903
+    },
+    {
+      "date": "2015-08-31",
+      "views": 17997,
+      "addtocarts": 452,
+      "transactions": 175,
+      "visitors": 11788
+    },
+    {
+      "date": "2015-09-01",
+      "views": 17573,
+      "addtocarts": 443,
+      "transactions": 158,
+      "visitors": 11277
+    },
+    {
+      "date": "2015-09-02",
+      "views": 16977,
+      "addtocarts": 417,
+      "transactions": 141,
+      "visitors": 11017
+    },
+    {
+      "date": "2015-09-03",
+      "views": 17453,
+      "addtocarts": 445,
+      "transactions": 138,
+      "visitors": 11611
+    },
+    {
+      "date": "2015-09-04",
+      "views": 17124,
+      "addtocarts": 452,
+      "transactions": 153,
+      "visitors": 11045
+    },
+    {
+      "date": "2015-09-05",
+      "views": 13973,
+      "addtocarts": 308,
+      "transactions": 80,
+      "visitors": 9060
+    },
+    {
+      "date": "2015-09-06",
+      "views": 14124,
+      "addtocarts": 369,
+      "transactions": 79,
+      "visitors": 9318
+    },
+    {
+      "date": "2015-09-07",
+      "views": 19030,
+      "addtocarts": 572,
+      "transactions": 189,
+      "visitors": 12230
+    },
+    {
+      "date": "2015-09-08",
+      "views": 20158,
+      "addtocarts": 505,
+      "transactions": 148,
+      "visitors": 12915
+    },
+    {
+      "date": "2015-09-09",
+      "views": 20995,
+      "addtocarts": 572,
+      "transactions": 192,
+      "visitors": 13066
+    },
+    {
+      "date": "2015-09-10",
+      "views": 21887,
+      "addtocarts": 480,
+      "transactions": 181,
+      "visitors": 14075
+    },
+    {
+      "date": "2015-09-11",
+      "views": 20671,
+      "addtocarts": 631,
+      "transactions": 211,
+      "visitors": 13080
+    },
+    {
+      "date": "2015-09-12",
+      "views": 15023,
+      "addtocarts": 370,
+      "transactions": 102,
+      "visitors": 9944
+    },
+    {
+      "date": "2015-09-13",
+      "views": 16373,
+      "addtocarts": 395,
+      "transactions": 88,
+      "visitors": 10768
+    },
+    {
+      "date": "2015-09-14",
+      "views": 20282,
+      "addtocarts": 469,
+      "transactions": 154,
+      "visitors": 13389
+    },
+    {
+      "date": "2015-09-15",
+      "views": 19673,
+      "addtocarts": 594,
+      "transactions": 158,
+      "visitors": 12687
+    },
+    {
+      "date": "2015-09-16",
+      "views": 11022,
+      "addtocarts": 335,
+      "transactions": 137,
+      "visitors": 6824
+    },
+    {
+      "date": "2015-09-17",
+      "views": 9830,
+      "addtocarts": 251,
+      "transactions": 45,
+      "visitors": 6270
+    },
+    {
+      "date": "2015-09-18",
+      "views": 1479,
+      "addtocarts": 34,
+      "transactions": 15,
+      "visitors": 1016
+    }
+  ],
+  "funnel": {
+    "view_pairs": 2330774,
+    "view_add_pairs": 45114,
+    "view_purchase_pairs": 17237,
+    "strict_three_step_pairs": 14807,
+    "view_to_add_rate": 0.019355801978226974,
+    "view_to_purchase_rate": 0.007395397408757777,
+    "strict_rate": 0.006352825284647932
+  },
+  "segments": [
+    {
+      "segment": "已有历史访问",
+      "sessions": 354095,
+      "view_sessions": 352051,
+      "view_purchase_sessions": 5325,
+      "purchase_rate": 0.015125649408750436
+    },
+    {
+      "segment": "首次观测访问",
+      "sessions": 1407580,
+      "view_sessions": 1403730,
+      "view_purchase_sessions": 6826,
+      "purchase_rate": 0.004862758507690225
+    }
+  ],
+  "recommendation": [
+    {
+      "split": "test",
+      "method": "coview",
+      "queries": 28166,
+      "candidate_items": 199510,
+      "hits": 5147,
+      "hit_rate_at_10": 0.18273805297166798,
+      "coverage_at_10": 0.10173424890982909,
+      "fallback_rate": 0.3793225875168643,
+      "hit_ci_low": 0.17760267266959945,
+      "hit_ci_high": 0.18773442703480733
+    },
+    {
+      "split": "test",
+      "method": "popular",
+      "queries": 28166,
+      "candidate_items": 199510,
+      "hits": 63,
+      "hit_rate_at_10": 0.0022367393311084286,
+      "coverage_at_10": 5.5135080948323395e-05,
+      "fallback_rate": 1.0,
+      "hit_ci_low": 0.0016032365187800346,
+      "hit_ci_high": 0.0028931695139576205
+    },
+    {
+      "split": "validation",
+      "method": "coview",
+      "queries": 49856,
+      "candidate_items": 199510,
+      "hits": 10758,
+      "hit_rate_at_10": 0.21578145057766368,
+      "coverage_at_10": 0.12453511102200392,
+      "fallback_rate": 0.3200216623876765,
+      "hit_ci_low": 0.21144440902542616,
+      "hit_ci_high": 0.21994336963300176
+    },
+    {
+      "split": "validation",
+      "method": "popular",
+      "queries": 49856,
+      "candidate_items": 199510,
+      "hits": 142,
+      "hit_rate_at_10": 0.0028482028241335047,
+      "coverage_at_10": 5.5135080948323395e-05,
+      "fallback_rate": 1.0,
+      "hit_ci_low": 0.002374087066326667,
+      "hit_ci_high": 0.0033364689603505725
+    }
+  ],
+  "eligibility": [
+    {
+      "split": "test",
+      "prediction_points": 200912,
+      "labelled_queries": 28166,
+      "no_future_distinct_view": 172746,
+      "unseen_target_queries": 3166
+    },
+    {
+      "split": "validation",
+      "prediction_points": 366649,
+      "labelled_queries": 49856,
+      "no_future_distinct_view": 316793,
+      "unseen_target_queries": 3068
+    }
+  ],
+  "paired_comparison": [
+    {
+      "split": "validation",
+      "difference_pp": 21.293324775353017,
+      "ci_low_pp": 20.85684764648733,
+      "ci_high_pp": 21.716076789942885,
+      "bootstrap_unit": "visitor",
+      "bootstrap_replicates": 600
+    },
+    {
+      "split": "test",
+      "difference_pp": 18.050131364055954,
+      "ci_low_pp": 17.53505101694492,
+      "ci_high_pp": 18.560365237620076,
+      "bootstrap_unit": "visitor",
+      "bootstrap_replicates": 600
+    }
+  ],
+  "experiment": {
+    "label": "独立模拟数据，非线上实验",
+    "seed": 20261108,
+    "control_users": 49911,
+    "treatment_users": 50089,
+    "control_rate": 0.025585542265232113,
+    "treatment_rate": 0.026193375791091857,
+    "difference_pp": 0.06078335258597432,
+    "ci_low_pp": -0.13607196566819002,
+    "ci_high_pp": 0.25763867084013864,
+    "srm_pvalue": 0.573512906579863,
+    "support_control_rate": 0.005309450822463986,
+    "support_treatment_rate": 0.0049711513505959395,
+    "support_difference_pp": -0.03382994718680466,
+    "support_ci_high_pp": 0.054818961040122786,
+    "sample_size_per_arm": 175025,
+    "mde_absolute_pp": 0.15,
+    "decision": "模拟转化差异区间包含0，证据不足以支持上线；预设客服接触率+0.10个百分点护栏未触发。此结论仅针对模拟数据。",
+    "parameters": {
+      "n_users": 100000,
+      "allocation": 0.5,
+      "p_control": 0.025,
+      "p_treatment": 0.0265,
+      "support_p_control": 0.005,
+      "support_p_treatment": 0.0053
+    }
+  },
+  "insights": [
+    "完整事件表共2,756,101行，去除460条完全重复记录后保留2,755,641行。",
+    "浏览商品-访问配对中，浏览后购买比例为0.74%，严格浏览→加购→购买比例为0.64%。",
+    "测试集共同浏览Hit Rate@10为18.27%，热门基线为0.22%；这是下一不同商品浏览的离线命中率。"
+  ],
+  "protocol": {
+    "train": "before 2015-08-01 UTC",
+    "validation": "2015-08-01 through 2015-08-31 UTC",
+    "test": "2015-09-01 through data end UTC",
+    "minimum_pair_support": 2,
+    "max_distinct_items_per_training_session": 50,
+    "k": 10,
+    "model_frozen_before_validation": true,
+    "bootstrap_unit": "visitor",
+    "bootstrap_seed": 20261108
+  },
+  "checks": {
+    "join_rows_preserved": true,
+    "user_key_unique": true,
+    "no_unmatched_users": true,
+    "strict_funnel_subset": true,
+    "strict_funnel_subset_of_cart": true,
+    "training_before_validation": true,
+    "labels_after_prediction": true,
+    "validation_labels_within_period": true,
+    "same_query_denominator": true,
+    "ten_unique_candidates": true,
+    "no_seed_recommended": true,
+    "fixed_training_catalog": true,
+    "valid_coverage": true
+  }
+}

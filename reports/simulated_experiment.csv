@@ -1,0 +1,2 @@
+label,seed,control_users,treatment_users,control_rate,treatment_rate,difference_pp,ci_low_pp,ci_high_pp,srm_pvalue,support_control_rate,support_treatment_rate,support_difference_pp,support_ci_high_pp,sample_size_per_arm,mde_absolute_pp,decision
+独立模拟数据，非线上实验,20261108,49911,50089,0.025585542265232113,0.026193375791091857,0.06078335258597432,-0.13607196566819002,0.25763867084013864,0.573512906579863,0.005309450822463986,0.0049711513505959395,-0.03382994718680466,0.054818961040122786,175025,0.15,模拟转化差异区间包含0，证据不足以支持上线；预设客服接触率+0.10个百分点护栏未触发。此结论仅针对模拟数据。

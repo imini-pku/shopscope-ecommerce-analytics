@@ -1,0 +1,42 @@
+{
+  "initial": {
+    "title": "ShopScope — 购物行为与推荐评估",
+    "kpis": [
+      "2,755,641",
+      "1,407,580",
+      "1,761,675",
+      "0.74%"
+    ],
+    "dailyRows": 139,
+    "overflow": false,
+    "source": "https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset"
+  },
+  "dayFilter": 1,
+  "interaction": {
+    "caption": "购买事件 · 139 个观测日",
+    "tooltipHidden": false,
+    "split": "验证集",
+    "recommendationRows": 2
+  },
+  "desktop": {
+    "x": 0,
+    "y": 0,
+    "width": 1425,
+    "height": 3515
+  },
+  "mobileCheck": {
+    "width": 390,
+    "body": 390,
+    "overflow": false,
+    "chartWidth": 324,
+    "chartViewBox": "0 0 324 220"
+  },
+  "mobile": {
+    "x": 0,
+    "y": 0,
+    "width": 390,
+    "height": 4949
+  },
+  "errors": [],
+  "externalRequests": []
+}
