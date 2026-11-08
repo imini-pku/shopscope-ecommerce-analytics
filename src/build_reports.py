@@ -85,7 +85,7 @@ def report():
 
 def experiment():
     p=ROOT/'reports/ShopScope_AB实验设计.pdf';c=canvas.Canvas(str(p),pagesize=(595,842));c.setTitle('ShopScope A/B实验设计与模拟结果')
-    head(c,'EXPERIMENT DESIGN','关联推荐：验证方案与模拟判读','设计练习 · 所有概率和规模均为模拟假设 · 非已实施线上实验',1,1)
+    head(c,'EXPERIMENT DESIGN','关联推荐：验证方案与模拟判读','实验方案 · 所有概率和规模均为模拟假设 · 非已实施线上实验',1,1)
     e=M['experiment']; y=675
     blocks=[
     ('业务假设与干预','在商品详情页相关推荐位置，使用共同浏览候选替代全局热门，能提高7日购买用户比例，同时不增加客服负担。保持UI、推荐条数和其他流量规则一致。'),

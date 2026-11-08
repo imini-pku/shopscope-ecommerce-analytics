@@ -1,6 +1,6 @@
 # ShopScope · 电商行为与推荐分析
 
-以 Retailrocket 完整公开行为数据为基础，连接 **SQL 数据质量 → 购物路径 → 推荐离线评估 → 实验设计 → 可交互报告**。面向数据科学求职展示，使用 Python、DuckDB SQL 与原生 HTML/JavaScript。
+以 Retailrocket 完整公开行为数据为基础，连接 **SQL 数据质量 → 购物路径 → 推荐离线评估 → 实验设计 → 可交互报告**，使用 Python、DuckDB SQL 与原生 HTML/JavaScript 构建可复现分析流程。
 
 **数据：2,756,101 条事件，1,407,580 位匿名访客，2015-05-03 至 2015-09-18 UTC。** 2026年11月完成本次分析。
 
